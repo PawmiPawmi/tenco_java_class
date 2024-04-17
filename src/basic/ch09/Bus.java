@@ -25,4 +25,4 @@ public class Bus {
 		System.out.println("버스 수익금 : " + money);
 	}
 
-}
+}  
