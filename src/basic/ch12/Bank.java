@@ -8,10 +8,6 @@ public class Bank {
 		this.name=name;
 	}
 	
-	public void signIn(Account account) {
-		this.number++;
-	}
-	
 	public int getNumber() {
 		return this.number;}
 	
