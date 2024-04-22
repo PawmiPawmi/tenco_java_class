@@ -97,13 +97,11 @@ public class PhonBookManager {
 	// 2. 조회하기
 	public static void SearchPhoneBook_ByName(Scanner sc, PhoneBook[] phonebook) {
 		System.out.println("전체 조회를 시작합니다.");
-		System.out.println("-----------------------");
 		for (int i = 0; i < phonebook.length; i++) {
 			if (phonebook[i] != null) {
 				phonebook[i].showInfo();
 			}
 		}
-		System.out.println("-----------------------");
 
 	}
 
@@ -111,9 +109,7 @@ public class PhonBookManager {
 	public static void UpdatePhoneNumber(Scanner sc, PhoneBook[] phonebook) {
 		System.out.println("기존 정보 수정을 시작합니다.");
 		System.out.println("바꾸고자 하는 사용자의 이름을 입력하시오");
-		System.out.println("-----------------------");
 		String userName = sc.nextLine();
-		boolean flag = true;
 
 		for (int i = 0; i < phonebook.length; i++) {
 			if (phonebook[i] != null) {
@@ -125,13 +121,10 @@ public class PhonBookManager {
 					phonebook[i].setName(newName);
 					phonebook[i].setNumber(newNumber);
 					System.out.println("정보가 성공적으로 수정되었습니다.");
-					System.out.println("-----------------------");
 					break;
 				} else {
-					System.out.println("-----------------------");
 					System.out.println("수정하고자 하는 회원의 정보가 없습니다.");
 					System.out.println("다시 한 번 입력해주세요.");
-					System.out.println("-----------------------");
 					break;
 				}
 			}
@@ -149,7 +142,8 @@ public class PhonBookManager {
 				if (phonebook[i].getName().equals(deleteNumber)) {
 					phonebook[i] = null;
 					System.out.println("정보가 성공적으로 삭제되었습니다.");
-					flag3 = true;
+					flag3=true;
+					break;
 				}
 			}
 			if (flag3 = false) {
