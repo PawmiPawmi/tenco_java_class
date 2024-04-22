@@ -16,16 +16,7 @@ public class BookTest {
 		books[4]=new Book("팔묘촌", "요코미조 세이시");
 		books[9]=new Book("삼수탑", "요코미조 세이시");
 		
-		// 배열은 반복문과 함께 많이 활용된다. 
-		// 그리고 배열의 크기와 요소의 크기는 꼭 동일한 것은 아니다.
-		
-		// books[3] --> Book 이라는 객체로 치환
-		//System.out.println(books[3].getTitle());
-		//System.out.println(books[3].getAuthor());
-	
-		
-		//System.out.println(books[5]);// <-- null pointer exception
-		
+
 		for(int i=0; i<books.length; i++) {
 			if(books[i]!=null) {
 				System.out.println(books[i].getTitle());
