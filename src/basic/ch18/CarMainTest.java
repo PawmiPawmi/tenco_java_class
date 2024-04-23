@@ -6,7 +6,6 @@ public class CarMainTest {
 		car1.startCar();
 		
 		// 엔진의 속성인 name 변수에 값을 초기화해보자.
-		car1.engine.name="집가고싶다..";
 		car1.engine.price=11_111_111;
 		
 		System.out.println(car1.engine.name);

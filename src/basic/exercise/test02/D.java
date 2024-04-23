@@ -1,4 +1,4 @@
-package basic.exercise.test01;
+package basic.exercise.test02;
 
 public class D {
 	private String name;
