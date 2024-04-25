@@ -27,7 +27,7 @@ public class DeskTop extends Computer {
 			int choice=sc.nextInt();
 			
 			if(mood>=2) {
-				System.out.println("속이 울렁거린다. 잠시 쉬고 오자...");
+				System.out.println("눈이 피곤하다. 잠시 쉬고 오자...");
 				break;
 			}
 			if(choice==1) {
