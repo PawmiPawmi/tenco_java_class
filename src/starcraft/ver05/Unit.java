@@ -6,7 +6,7 @@ package starcraft.ver05;
  * default
  * private
  */
-public class Unit {
+public abstract class Unit implements Attacker, Defender, Showing {
 	
 	protected String name;
 	protected int power;

@@ -8,5 +8,16 @@ public class Marine extends Unit {
 		super.power=power;
 		super.hp=70;
 	}
-	
+
+	@Override
+	public void attack() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void beAttacked() {
+		// TODO Auto-generated method stub
+		
+	}
 }
